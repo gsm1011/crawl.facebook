@@ -1,5 +1,7 @@
---------
-HOWTO: 
+
+HOWTO
+-----
+
  - python facebookdb.py [your_facebook_login_email] [facebook_passwd] [facebook_id]
  - facebook_id can be obtained from following link from facebook. 
    [http://www.facebook.com/profile.php?id=1545751628] 1545751628 is
@@ -9,8 +11,10 @@ HOWTO:
  - use python tobinary.py user_profiles.txt to convert the crawled
    result to binary format. 
 
--------
-RESULT: 
+
+RESULT 
+------
+
  - crawled results are saved into files with utf-8 encoding, so
  somethings there might be errors if utf-8 is not properly supported 
  on your computer. 
@@ -19,7 +23,9 @@ RESULT:
  - user_wallposts.txt -> The recent wallposts of users. 
 
 -------
-FORMAT:
+FORMAT
+------
+
  - user_profiles.txt
  columns meaning of binary from left to right [27 columns excl. uid]
  sex, networks, relationships, interested_in, bio,
@@ -27,8 +33,10 @@ FORMAT:
  photos_albums, myposts, websites, address, im_screen_name, email,
  facebookuri, phone, family, brithday, current_city, hometown,
  activities, interests, employers, grad_school, college, high_school
--------
-files: 
+
+FILES
+-----
+
 facebookdb.py
  - facebook crawler main file. 
  - This file is responsible for the scheduling of crawling. 
